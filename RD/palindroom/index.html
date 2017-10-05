@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Palindroom</title>
+  </head>
+  <body>
+  <h1>Palindroom</h1>
+  <input type="text" name="invoer" id="invoer" /><button onclick="checkInvoer()">Klik hier</button>
+  <span id="resultaat"></span>
+  <script>
+    function checkInvoer() {
+      var invoer = document.getElementById("invoer").value;
+      var tekst = invoer.replace(/[^A-Z0-9]/ig, "").toLowerCase();
+      var omgekeerd = invoer.split('').reverse().join('');
+
+      if (tekst == omgekeerd){
+        document.getElementById("resultaat").innerHTML= "De invoer is een palindroom";
+      } else{
+        document.getElementById("resultaat").innerHTML= "De invoer is geen palindroom";
+      }
+    }
+  </script>
+  </body>
+</html>
