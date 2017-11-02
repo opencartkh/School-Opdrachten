@@ -23,36 +23,28 @@
         father.name: "Joost";
         father.haircolour: "red";
         father.age: 51;
-      let mother = Object.crate(human);
+      let mother = Object.create(human);
         mother.name: "Froukje";
         mother.haircolour: "blonde";
         mother.age: 51;
-        
-      let laptop {
-        merk: "MSI",
-        colour: "black",
-        age: 1
+
+      let device = constructor(merk, colour, age) {
+        this.merk = merk;
+        this.colour = colour;
+        this.age = age;
       };
-      let mobile {
-        merk: "Google Phone",
-        colour: "black",
-        age: 2
+      let laptop = new device("MSI", "black", 1);
+      let mobile = new device("Google Phone", "black", 2);
+      let macBook = new device("Apple", "Grey", 4);
+      let pc = new device("MSI", "black", 6);
+      let keyboard = new device("Logitech", "black", 4);
+
+      let car extends device {
+        constructor() {
+          super("Toyota", "white", 4)
+        }
       };
-      let macBook {
-        merk: "Apple",
-        colour: "Grey",
-        age: 4
-      };
-      let pc {
-        merk: "MSI",
-        colour: "black",
-        age: 6
-      };
-      let car {
-        merk: "Toyota",
-        colour: "white",
-        age: 4
-      };
+      
       let mobile {
         merk: "Samsung",
         colour: "White",
@@ -67,11 +59,6 @@
         merk: "Samsung",
         colour: "black",
         size: "normal"
-      };
-      let keyboard {
-        merk: "Logitech",
-        colour: "black",
-        age: 4
       };
       let bed {
         merk: "IKEA",
