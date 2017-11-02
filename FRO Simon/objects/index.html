@@ -6,29 +6,29 @@
   </head>
   <body>
     <script>
-    let human {
+    let human = {
       name: "",
       haircolour: "",
       age: 0
     };
       let me = Object.create(human);
-        me.name: "Maarten";
-        me.haircolour: "blonde";
-        me.age: 19;
+        me.name = "Maarten";
+        me.haircolour = "blonde";
+        me.age = 19;
       let brother = Object.create(human);
-        brother.name: "Sander";
-        brother.haircolour: "blonde";
-        brother.age: 14;
+        brother.name = "Sander";
+        brother.haircolour = "blonde";
+        brother.age = 14;
       let father = Object.create(human);
-        father.name: "Joost";
-        father.haircolour: "red";
-        father.age: 51;
+        father.name = "Joost";
+        father.haircolour = "red";
+        father.age = 51;
       let mother = Object.create(human);
-        mother.name: "Froukje";
-        mother.haircolour: "blonde";
-        mother.age: 51;
+        mother.name = "Froukje";
+        mother.haircolour = "blonde";
+        mother.age = 51;
 
-      let device = constructor(merk, colour, age) {
+      let device = function(merk, colour, age) {
         this.merk = merk;
         this.colour = colour;
         this.age = age;
@@ -39,12 +39,12 @@
       let pc = new device("MSI", "black", 6);
       let keyboard = new device("Logitech", "black", 4);
 
-      let car extends device {
-        constructor() {
-          super("Toyota", "white", 4)
-        }
+      let car {
+        merk: "Toyota",
+        colour: "white",
+        age: 4
       };
-      
+
       let mobile {
         merk: "Samsung",
         colour: "White",
