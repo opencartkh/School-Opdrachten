@@ -6,11 +6,28 @@
   </head>
   <body>
     <script>
-      let me {
-        name: "Maarten",
-        age: 19,
-        haircolour: "blonde"
-      };
+    let human {
+      name: "",
+      haircolour: "",
+      age: 0
+    };
+      let me = Object.create(human);
+        me.name: "Maarten";
+        me.haircolour: "blonde";
+        me.age: 19;
+      let brother = Object.create(human);
+        brother.name: "Sander";
+        brother.haircolour: "blonde";
+        brother.age: 14;
+      let father = Object.create(human);
+        father.name: "Joost";
+        father.haircolour: "red";
+        father.age: 51;
+      let mother = Object.crate(human);
+        mother.name: "Froukje";
+        mother.haircolour: "blonde";
+        mother.age: 51;
+        
       let laptop {
         merk: "MSI",
         colour: "black",
@@ -25,21 +42,6 @@
         merk: "Apple",
         colour: "Grey",
         age: 4
-      };
-      let brother {
-        name: "Sander",
-        haircolour: "blonde",
-        age: 14
-      };
-      let father {
-        name: "Joost",
-        haircolour: "red",
-        age: 51
-      };
-      let mother {
-        name: "Froukje",
-        haircolour: "blonde",
-        age: 51
       };
       let pc {
         merk: "MSI",
