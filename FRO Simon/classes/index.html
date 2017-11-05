@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Classes</title>
+  </head>
+  <body>
+    <h1>Classes</h1>
+    <script>
+    class Vehicle {
+      constructor(description, wheels) {
+        this.description = description;
+        this.wheels = wheels;
+      }
+
+      const semiTruck = new Vehicle('semi truck', 12);
+      const skiVan = new Vehicle('cool ski van', 4);
+
+      console.log(`I'm a ${this.description} with ${this.wheels} wheels`);
+      
+    </script>
+  </body>
+</html>
