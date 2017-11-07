@@ -2,29 +2,32 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link href="styles/main.css" rel="stylesheet" />
     <title>Spareribs piri-piri van René Pluijm</title>
   </head>
   <body>
+    <div class="nav">
     <p>
       Aanmelden | Inloggen
     </p>
+    <img class="nav__logo" src="img/logo.png" alt="logo" />
     <nav>
-      <img src="logo.png" alt="logo" />
       <ul>
-        <li>Over</li>
-        <li>Recepten</li>
-        <li>Tips</li>
-        <li>Kookvideo's</li>
-        <li>Magazine</li>
-        <li>Winnen</li>
+        <li><a href="#">Over</a></li>
+        <li><a href="#">Recepten</a></li>
+        <li><a href="#">Tips</a></li>
+        <li><a href="#">Kookvideo's</a></li>
+        <li><a href="#">Magazine</a></li>
+        <li><a href="#">Winnen</a></li>
       </ul>
-        <button type="button" name="boodschappenlijst">Boodschappenlijst</button>
+        <button class="nav__lijst" type="button" name="boodschappenlijst">Boodschappenlijst</button>
     </nav>
-    <img src="food.jpg" alt="eten" />
-
-    <p>
+    </div>
+    <img src="img/food.jpg" alt="eten" />
+    <div class="food">
+    <h3>
       Ingrediënten
-    </p>
+    </h3>
     <ul>
       <li>2 pakken gemarineerde spareribs</li>
       <li>1 rode peper</li>
@@ -38,17 +41,18 @@
     </ul>
     <button type="button" name="alles">Voeg alles toe</button> <br />
     <a href="#">Bekijk je boodschappenlijstje</a>
-
-    <h3>Spareribs piri-piri van René Pluijm</h3>
+  </div>
+  <div class="recept">
+    <h1>Spareribs piri-piri van René Pluijm</h1>
     <button type="button" name="opslaan">Opslaan</button>
     <button type="button" name="printen">Print</button>
-    <p>
+    <p class="recept__tekst">
       <strong>
         De spareribs van Coop zijn al lekker gemarineerd met piri-piri saus,maar René Pluijm zou René niet zijn als <br />
         hij er niet wat geks mee deed. Met ketjap, kokos, limoen en ananas geeft hij een heerlijke oosterse smaak <br />
         aan dit van oorsprong Portugese recept.
       </strong><br /><br />
-        INSTUCTIES
+        Instructies
         <ol>
           <li>Snijd de spareribs klein.</li>
           <li>Pak daarna een bakje voor de marinade en snijd de knoflook en rode peper klein.</li>
@@ -64,10 +68,10 @@
         </ol>
         MEER OVER
     </p>
-    <button type="button">ananas</button>
-    <button type="button">kokos</button>
-    <button type="button">spareribs</button>
-    
+    <button class="recept__meer" type="button">ananas</button>
+    <button class="recept__meer" type="button">kokos</button>
+    <button class="recept__meer" type="button">spareribs</button>
+  </div>
     <p>
       GERELATEERDE RECEPTEN <br /><br />
       Kokos-avocadosoep <br />
