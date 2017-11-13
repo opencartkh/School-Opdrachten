@@ -17,7 +17,7 @@
   */
 
   //verbinding maken met de database
-  $dbc = new PDO('mysql:host=localhost;dbname=22617_mailingdatabase', '22617', 'cnibcu');
+  $dbc = new PDO('mysql:host=localhost;dbname=kampmeij_school', 'kampmeij_school', '96LbAXakhX3v');
 
   //Prepared statement maken
   $query = $dbc ->prepare("INSERT INTO gastenboek VALUES (0,NOW(),:voornaam,:achternaam,:bericht)");
@@ -37,12 +37,15 @@
 
           if (strlen($voornaam) > 100 || strlen($achternaam) > 254) {
               echo "De voornaam of achternaam is te lang";
+              exit();
           }
           if (preg_match("%[^A-Z]%i",$voornaam . $achternaam)){
               echo "Er staan tekens in de voornaam of Achternaam die daar niet thuis horen";
+              exit();
           }
           if (strlen($bericht) > 5000) {
               echo  "Het bericht is te lang";
+              exit();
           }
           $bericht2 = preg_replace('/lul/','banaan',$bericht);
 
