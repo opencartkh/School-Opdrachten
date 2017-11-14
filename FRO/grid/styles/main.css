@@ -1,32 +1,119 @@
-html {
+html, body {
+  margin: 0 auto;
+  max-width: 1041px;
   height: 100%; }
 
-body {
-  margin: 0;
-  padding: 0;
-  min-height: 100%;
-  display: flex;
-  flex-direction: column; }
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+  padding: 10px;
+  grid-template-areas: "header header header" "menu menu menu" "banner banner banner" "sidebar content content" "footer footer footer"; }
 
-.food h3 {
-  text-transform: uppercase; }
-.food ul {
-  list-style-type: none; }
-  .food ul li {
-    margin-bottom: 1em;
-    border-bottom: 1px solid;
-    font-size: 1.1em; }
-.food button {
-  background-color: orange;
-  color: white;
-  height: 3em;
-  width: 10em; }
-.food a {
-  color: orange; }
+.login {
+  text-transform: uppercase;
+  grid-area: header;
+  text-align: right;
+  background-color: #EBEBEB;
+  font-size: 15px;
+  height: 30px;
+  cursor: pointer; }
+  .login:hover {
+    color: gray; }
 
-.recept h1 {
-  color: orange; }
-.recept p {
-  text-transform: uppercase; }
+.menu {
+  grid-area: menu;
+  height: 50px;
+  text-align: right; }
+  .menu__logo {
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    width: 300px;
+    z-index: 99; }
+  .menu ul {
+    margin-left: 4em;
+    list-style-type: none; }
+    .menu ul li {
+      float: left;
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase; }
+      .menu ul li a {
+        color: black;
+        text-align: center;
+        padding: 5px;
+        text-decoration: none; }
+      .menu ul li a:hover {
+        color: gray; }
+  .menu__lijst {
+    background-color: #F8A230;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    font-size: 15px;
+    cursor: pointer; }
+    .menu__lijst:hover {
+      color: gray; }
+
+.foto {
+  height: 270px;
+  background: url("http://keukentafel.nl/wp-content/uploads/Espetada-a-la-portugal-rene-pluijm.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  grid-area: banner; }
+
+.lijst {
+  grid-area: sidebar; }
+  .lijst p {
+    text-transform: uppercase;
+    border-bottom: dashed 3px #F8A230; }
+  .lijst ul {
+    list-style-type: none; }
+    .lijst ul li {
+      border-bottom: solid 1px gray; }
+  .lijst__alles {
+    background-color: #F8A230;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    font-size: 15px;
+    cursor: pointer; }
+    .lijst__alles:hover {
+      color: gray; }
+  .lijst__lijst {
+    color: #F8A230; }
+
+.tekst {
+  grid-area: content;
+  position: relative; }
+  .tekst h1 {
+    color: #F8A230; }
+  .tekst__opslaan {
+    background-color: #F8A230;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    font-size: 15px;
+    cursor: pointer; }
+    .tekst__opslaan:hover {
+      color: gray; }
+  .tekst__printen {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    font-size: 15px;
+    cursor: pointer; }
+    .tekst__printen:hover {
+      color: gray; }
+  .tekst__meer {
+    background-color: #d4d4d4;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    font-size: 15px;
+    cursor: pointer; }
+    .tekst__meer:hover {
+      color: gray; }
 
 /*# sourceMappingURL=main.css.map */
