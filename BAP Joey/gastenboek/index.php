@@ -17,7 +17,7 @@
   */
 
   //verbinding maken met de database
-  $dbc = new PDO('mysql:host=localhost;dbname=kampmeij_school', 'kampmeij_school', '96LbAXakhX3v');
+  $dbc = new PDO('mysql:host=localhost;dbname=kampmeij_school', '**************', '*****************');
 
   //Prepared statement maken
   $query = $dbc ->prepare("INSERT INTO gastenboek VALUES (0,NOW(),:voornaam,:achternaam,:bericht)");
