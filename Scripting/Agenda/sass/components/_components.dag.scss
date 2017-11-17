@@ -1,0 +1,12 @@
+$margin: 2px;
+
+.dag {
+  color: white;
+  background-color: #185cb5;
+  width: 4em;
+
+  &__dag {
+    display: inline;
+    margin-left: $margin;
+  }
+}
