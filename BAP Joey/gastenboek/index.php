@@ -35,11 +35,6 @@
           $bericht2 = preg_replace('/lul/','banaan',$bericht);
           //query afschieten
           $query->execute() or die('Problemen met de PDO');
-          /*
-          $query = "INSERT INTO gastenboek
-                   VALUES (0,NOW(),'$voornaam','$achternaam','$bericht')";
-          $result = mysqli_query($dbc, $query) or die ('Problemen met het bericht toe te voegen');
-          */
       }
   }
   //Prepared statement maken
