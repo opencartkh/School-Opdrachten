@@ -22,7 +22,7 @@ body {
   position: absolute;
   transition: transform 3s cubic-bezier(0.14, 0, 0.11, 0); }
   .blok--verplaatst {
-    transform: translateX(50vw); }
+    transform: translateX(6vw); }
   .blok__1 {
     background-color: #480d88;
     top: 10em; }
