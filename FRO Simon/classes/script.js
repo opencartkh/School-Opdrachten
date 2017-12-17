@@ -1,40 +1,26 @@
-const id = document.getElementById('canvas');
-
-class canvas {
-    constructor(xPos, yPos, width, height, penWidth, color, id) {
-        this.yPos = yPos;
-        this.xPos = xPos;
-        this.width = width;
-        this.height = height;
-        this.penWidth = penWidth;
-        this.color = color;
-        this.id = id;
+class Rectangle {
+    constructor() {
+        this.xPos = 10;
+        this.yPos = 10;
+        this.width = 300;
+        this.height = 100;
+        this.orientation = 'portrait';
+        this.id = document.getElementById('canvas');
+        this.context = this.id.getContext('2d');
     }
-    draw(){
-
-        let xPos = 10;
-        let yPos = 10;
-        let width = 300;
-        let height = 100;
-      
-        let context = id.getContext('2d');
-    
-        context.beginPath();
-    
-        context.strokeStyle = this.color;
-        context.lineWidth = this.penWidth;
-    
-        context.moveTo(xPos, yPos);
-    
-        context.lineTo(xPos, yPos + height);
-        context.lineTo(xPos + width, yPos + height);
-    
-        context.lineTo(xPos + width, yPos);
-        context.lineTo(xPos, yPos);
-
-        context.stroke();
+    draw(penWidth, color) {
+        this.context.beginPath();
+        this.context.strokeStyle = color;
+        this.context.lineWidth = penWidth;
+        this.context.moveTo(this.xPos, this.yPos);
+        this.context.lineTo(this.xPos, this.yPos + this.height);
+        this.context.lineTo(this.xPos + this.width, this.yPos + this.height);
+        this.context.lineTo(this.xPos + this.width, this.yPos);
+        this.context.lineTo(this.xPos, this.yPos);
+        this.context.stroke();
     }
 }
 
-let shape = new canvas('4', 'green', id);
-shape.draw();
+drawRectangle = new Rectangle();
+
+drawRectangle.draw(10, 'green');
