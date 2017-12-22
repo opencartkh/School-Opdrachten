@@ -1,12 +1,16 @@
-$margin: 2px;
-
 .dag {
-  color: white;
-  background-color: #185cb5;
-  width: 4em;
-
+  width: 10em;
+  text-align: center;
+  display: inline-block;
   &__dag {
-    display: inline;
-    margin-left: $margin;
+    background-color: #185cb5;
+    color: white;
+  }
+  &__datum {
+    background-color: #185cb5;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
   }
 }

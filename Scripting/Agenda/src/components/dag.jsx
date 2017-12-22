@@ -1,4 +1,5 @@
 import React from 'react';
+import Item from './item';
 
 /**
  * Dag component
@@ -20,6 +21,11 @@ class Dag extends React.Component {
               <div className="dag__datum">
                 {this.props.datum}
               </div>
+              <Item
+                  titel="Test Item"
+                  tijd="14:00-16:00"
+                  extra="Dit is een test item"
+                  />
             </div>
         );
     }

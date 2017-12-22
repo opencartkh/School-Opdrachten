@@ -1,0 +1,14 @@
+.item {
+    background-color: lightgray;
+    padding: 8px;
+    display: inline-block;
+    &__titel {
+        width: 95%;
+    }
+    &__tijd {
+        width: 95%;
+    }
+    &__extra {
+        width: 95%;
+    }
+}

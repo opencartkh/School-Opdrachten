@@ -27,8 +27,11 @@
 /*
  | COMPONENTS
  */
+@import 'components/_components.agenda';
 @import 'components/_components.dag';
- 
+@import 'components/_components.item'
+
+
 
 /*
  | TRUMPS: utility and helper classes, hacks and overrides
