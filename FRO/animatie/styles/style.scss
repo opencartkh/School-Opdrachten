@@ -22,7 +22,7 @@ body {
   height: 5em;
   left: -9.5em;
   position: absolute;
-  transition: transform 3s cubic-bezier(.14,0,.11,0);
+  transition: transform 1s cubic-bezier(.5,-0.59,.5,1.45);
 
   &--verplaatst {
     transform: translateX(6vw);

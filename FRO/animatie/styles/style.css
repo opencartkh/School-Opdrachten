@@ -20,7 +20,7 @@ body {
   height: 5em;
   left: -9.5em;
   position: absolute;
-  transition: transform 3s cubic-bezier(0.14, 0, 0.11, 0); }
+  transition: transform 1s cubic-bezier(0.5, -0.59, 0.5, 1.45); }
   .blok--verplaatst {
     transform: translateX(6vw); }
   .blok__1 {
